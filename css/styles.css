@@ -1,3 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 /* цвет текста заголовков #212121; */
 /* основной цвет теста #757575; */
 /* белый #ffffff; */
@@ -38,8 +48,19 @@ body {
   letter-spacing: 0.03em;
 }
 
+.container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid tomato;
+}
+
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .link {
@@ -106,7 +127,14 @@ body {
 
 /* Герой */
 
+.hero {
+  text-align: center;
+}
+
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 46;
+
   background-color: var(--section-background-color);
   color: var(--white-color);
 
@@ -120,6 +148,10 @@ body {
 
 /* Кнопка */
 .button {
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 4px;
+
   background-color: var(--accent-color);
   color: var(--white-color);
 
@@ -277,7 +309,7 @@ body {
   background-color: var(--accent-color);
 }
 
-.footer-row {
+.copyright {
   color: var(--footer-secondary-text-color);
 
   font-size: 12px;
