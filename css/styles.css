@@ -48,6 +48,8 @@ body {
   letter-spacing: 0.03em;
 }
 
+/* Утилиты */
+
 .container {
   width: 1230px;
   padding-left: 15px;
@@ -70,6 +72,10 @@ body {
 /* Логотип */
 
 .logo-header {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
   color: var(--title-text-color);
 
   font-family: 'Raleway', sans-serif;
@@ -89,9 +95,22 @@ body {
   color: var(--accent-color);
 }
 
-/* Навигация */
+/* Site-nav */
+
+.site-nav {
+  display: flex;
+  margin-left: 86px;
+}
+
+.site-nav > .item:not(:last-child) {
+  margin-right: 50px;
+}
 
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--title-text-color);
 
   font-weight: 500;
@@ -109,6 +128,25 @@ body {
   color: var(--accent-color);
 }
 
+/* Nav-contacts + Main-nav */
+
+.nav-contacts,
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+/* Contacts */
+
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts > .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .contacts .link {
   color: var(--primery-text-color);
 
@@ -123,6 +161,38 @@ body {
   color: var(--accent-color);
 }
 
+.contacts .mail-header,
+.contacts .tel-header {
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.contacts .icon-mail {
+  display: inline-block;
+  width: 16px;
+  height: 10.85px;
+  margin-right: 10px;
+
+  background-color: var(--primery-text-color);
+}
+
+.contacts .icon-tel {
+  display: inline-block;
+  width: 10px;
+  height: 14.47px;
+  margin-right: 10px;
+
+  background-color: var(--primery-text-color);
+}
+
+.contacts .icon-mail:hover,
+.contacts .icon-tel:hover,
+.contacts .icon-mail:focus,
+.contacts .icon-tel:focus {
+  background-color: var(--accent-color);
+}
+
 /* Страница Студия */
 
 /* Герой */
@@ -133,7 +203,7 @@ body {
 
 .hero-title {
   margin-top: 0;
-  margin-bottom: 46;
+  margin-bottom: 46px;
 
   background-color: var(--section-background-color);
   color: var(--white-color);
@@ -148,7 +218,7 @@ body {
 
 /* Кнопка */
 .button {
-  display: inline-block;
+  display: block;
   padding: 10px 32px;
   border-radius: 4px;
 
@@ -163,14 +233,15 @@ body {
 
 /* Секции */
 
-.section-text {
-  color: var(--primery-text-color);
-
-  font-size: 14px;
-  line-height: 1.71;
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -182,15 +253,65 @@ body {
   text-transform: uppercase;
 }
 
-/* Секция Features */
+.section-text {
+  color: var(--primery-text-color);
+
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* Секция Features (Наши преимущества) */
+
+.features-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features-list > .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features .icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+
+  background-color: var(--secondary-background-color);
+}
 
 .features .icon:hover {
   background-color: var(--accent-color);
 }
 
-/* Секция Works */
+.features .section-subtitle {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.features .section-text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Секция Works (Чем мы занимаемся) */
+
+.works-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.works-list > .item:not(:last-child) {
+  margin-right: 30px;
+  width: 370px;
+}
 
 .works .section-subtitle {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+
   background-color: var(--section-background-color);
   color: var(--white-color);
 
@@ -200,47 +321,114 @@ body {
   text-transform: uppercase;
 }
 
-/* Секция Team */
+.works .pic {
+  display: block;
+  width: 370px;
+}
+
+/* Секция Team (Наша команда) */
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-list > .item:not(:last-child) {
+  margin-right: 30px;
+  width: 270px;
+}
 
 .team {
   background: var(--secondary-background-color);
+  text-align: center;
 }
 
-.team .icon {
-  color: var(--primery-text-color);
-}
-
-.team .icon:hover,
-.team .icon:focus {
-  background-color: var(--accent-color);
-  color: var(--white-color);
+.team .pic {
+  display: block;
+  margin-bottom: 30px;
+  width: 270px;
 }
 
 .team .name {
   font-weight: 500;
-  text-align: center;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .team .section-text {
-  text-align: center;
+  margin-top: 0;
+  margin-bottom: 16px;
 }
 
-/* Секция Clients */
+.socials-list {
+  display: flex;
+  margin-bottom: 24px;
+  margin-left: 35px;
+  margin-right: 36px;
+  justify-content: space-between;
+}
 
-.clients .icon {
+.socials-list > .item + .item {
+  margin-left: 11px;
+}
+
+.socials-list .icon {
+  display: block;
+  width: 44px;
+  height: 44px;
+
   color: var(--primery-text-color);
 }
 
-.clients .icon:hover,
-.clients .icon:focus {
+.socials-list .icon:hover,
+.socials-list .icon:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+
+/* Секция Clients (Постоянные клиенты) */
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-list > .item + .item {
+  margin-left: 30px;
+}
+
+.clients-list .icon {
+  display: block;
+  width: 175px;
+  height: 90px;
+
+  border: 2px solid var(--primery-text-color);
+  color: var(--primery-text-color);
+}
+
+.clients-list .icon:hover,
+.clients-list .icon:focus {
   color: var(--accent-color);
+  border: 2px solid var(--accent-color);
 }
 
 /* Страница Портфолио */
 
-/* Фильтры */
+/* Filters (Фильтры) */
 
 .filters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filters > .item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filters-button {
+  padding: 6px 22px;
+
   background-color: var(--secondary-background-color);
 
   font-family: inherit;
@@ -249,17 +437,41 @@ body {
   line-height: 1.62;
   text-align: center;
   letter-spacing: inherit;
+  border: 0 solid transparent;
+  border-radius: 4px;
 }
 
-.filters:hover,
-.filters:focus {
+.filters-button:hover,
+.filters-button:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
 }
 
-/*  Примеры работ */
+/*  Examples (Примеры работ) */
+
+.examples {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.examples > .item {
+  width: 380px;
+  margin: 15px;
+}
+
+.examples .pic {
+  display: block;
+  margin-bottom: 20px;
+}
 
 .examples-title {
+  margin-top: 0;
+  margin-bottom: 4px;
+  margin-left: 24px;
+  margin-right: 24px;
+  /* margin: 0 24px 4px; */
+
   color: var(--title-text-color);
 
   font-size: 18px;
@@ -274,11 +486,36 @@ body {
   line-height: 1.88;
 }
 
+.examples-text {
+  margin-top: 0;
+  margin-bottom: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
+  /* margin: 0 24px 20px; */
+}
+
 /* Футер */
 
 .footer {
   background-color: var(--footer-background-color);
   color: var(--white-color);
+}
+
+/* Site-footer */
+
+.site-footer {
+  display: flex;
+  align-items: center;
+}
+
+.adress-contacts {
+  margin-top: 48px;
+  margin-bottom: 28px;
+}
+
+.logo-footer {
+  display: block;
+  margin-bottom: 10px;
 }
 
 .footer-address {
@@ -291,6 +528,23 @@ body {
   color: var(--footer-primery-text-color);
 }
 
+.mail-footer,
+.tel-footer {
+  display: inline-block;
+  margin-top: 9px;
+}
+
+.socials-links {
+  margin-left: 179px;
+  margin-top: 56px;
+  margin-bottom: 56px;
+}
+
+.footer-socials {
+  display: block;
+  margin-bottom: 21px;
+}
+
 .footer-socials,
 .footer-form {
   font-weight: 700;
@@ -299,7 +553,19 @@ body {
   text-transform: uppercase;
 }
 
+.footer-list {
+  display: flex;
+}
+
+.footer-list > .item:not(:last-child) {
+  margin-right: 10px;
+}
+
 .footer .icon {
+  display: block;
+  width: 44px;
+  height: 44px;
+
   background-color: var(--footer-icon-bgc);
   color: var(--white-color);
 }
@@ -309,7 +575,27 @@ body {
   background-color: var(--accent-color);
 }
 
+.subscribe {
+  margin-left: auto;
+  padding-top: 56px;
+  padding-bottom: 50px;
+}
+
+.footer-form {
+  display: block;
+  margin-bottom: 21px;
+}
+
+/* Site-copyright */
+
+.site-copyright {
+  padding-top: 18px;
+  padding-bottom: 21px;
+}
+
 .copyright {
+  margin: 0;
+
   color: var(--footer-secondary-text-color);
 
   font-size: 12px;
