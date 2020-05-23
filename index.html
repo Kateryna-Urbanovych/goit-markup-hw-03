@@ -16,8 +16,8 @@
   </head>
   <body>
     <!-- Шапка сайта -->
-    <header>
-      <div class="container nav-contacts">
+    <header class="page-header">
+      <div class="container">
         <nav class="main-nav">
           <a class="logo-header link" href="./index.html">
             <span class="logo-accent">Web</span> Studio
@@ -37,15 +37,13 @@
         <ul class="contacts list">
           <li class="item">
             <a class="link icon-mail" href="" aria-label="Ссылка на почту"></a>
-            <a class="link mail-header" href="mailto:info@devstudio.com">
+            <a class="link" href="mailto:info@devstudio.com">
               info@devstudio.com
             </a>
           </li>
           <li class="item">
             <a class="link icon-tel" href="" aria-label="Ссылка на телефон"></a>
-            <a class="link tel-header" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
+            <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
       </div>
@@ -55,12 +53,12 @@
       <!-- Герой -->
       <section class="hero">
         <h1 class="hero-title">эффективные решения для вашего бизнеса</h1>
-        <a class="button link" href="">Заказать услугу</a>
+        <a class="button hero-button link" href="">Заказать услугу</a>
       </section>
       <!-- Features (Наши преимущества) -->
       <section class="section features">
         <div class="container">
-          <h2 class="section-title">Наши преимущества</h2>
+          <h2 class="section-title visually-hidden">Наши преимущества</h2>
           <ul class="features-list list">
             <li class="item">
               <img class="icon" src="./images/antenna.svg" alt="Антенна" />
@@ -104,9 +102,8 @@
           <ul class="works-list list">
             <li class="item">
               <img
-                class="pic"
-                src="./images/desktop.jpg"
-                width="380"
+                src="./images/growing-business.jpg"
+                width="370"
                 height="294"
                 alt="Ноутбук"
               />
@@ -114,9 +111,8 @@
             </li>
             <li class="item">
               <img
-                class="pic"
                 src="./images/mobile.jpg"
-                width="380"
+                width="370"
                 height="294"
                 alt="Смартфон"
               />
@@ -124,9 +120,8 @@
             </li>
             <li class="item">
               <img
-                class="pic"
-                src="./images/designer.jpg"
-                width="380"
+                src="./images/inspiration-has-no-borders.jpg"
+                width="370"
                 height="294"
                 alt="Монитор компьютера"
               />
@@ -136,141 +131,193 @@
         </div>
       </section>
       <!-- Team (Наша команда) -->
-      <section class="section team">
+      <section class="section wrap">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
-          <ul class="team-list list">
-            <li class="item">
+          <ul class="team list">
+            <li class="team-card">
               <img
-                class="pic"
                 src="./images/john-smith.jpg"
-                width="278"
+                width="270"
                 height="260"
                 alt="Фотография John Smith"
               />
-              <h3 class="name">John Smith</h3>
-              <p class="section-text">Product Designer</p>
-              <ul class="socials-list list">
-                <li class="item">
-                  <a class="icon link" href="" aria-label="Ссылка на Instagram">
-                    Ins
-                  </a>
-                </li>
-                <li class="item">
-                  <a class="icon link" href="" aria-label="Ссылка на Twitter">
-                    Twit
-                  </a>
-                </li>
-                <li class="item">
-                  <a class="icon link" href="" aria-label="Ссылка на Facebook">
-                    Fac
-                  </a>
-                </li>
-                <li class="item">
-                  <a class="icon link" href="" aria-label="Ссылка на LinkedIn">
-                    Link
-                  </a>
-                </li>
-              </ul>
+              <div class="team-card-content">
+                <h3 class="team-card-name">John Smith</h3>
+                <p class="team-card-profession">Product Designer</p>
+                <ul class="socials-list list">
+                  <li>
+                    <a
+                      class="icon link"
+                      href=""
+                      aria-label="Ссылка на Instagram"
+                    >
+                      Ins
+                    </a>
+                  </li>
+                  <li>
+                    <a class="icon link" href="" aria-label="Ссылка на Twitter">
+                      Twit
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="icon link"
+                      href=""
+                      aria-label="Ссылка на Facebook"
+                    >
+                      Fac
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="icon link"
+                      href=""
+                      aria-label="Ссылка на LinkedIn"
+                    >
+                      Link
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
-            <li class="item">
+            <li class="team-card">
               <img
-                class="pic"
                 src="./images/marta-stewart.jpg"
-                width="278"
+                width="270"
                 height="260"
                 alt="Фотография Marta Stewart"
               />
-              <h3 class="name">Marta Stewart</h3>
-              <p class="section-text">Frontend Developer</p>
-              <ul class="socials-list list">
-                <li class="item">
-                  <a class="icon link" href="" aria-label="Ссылка на Instagram">
-                    Ins
-                  </a>
-                </li>
-                <li class="item">
-                  <a class="icon link" href="" aria-label="Ссылка на Twitter">
-                    Twit
-                  </a>
-                </li>
-                <li class="item">
-                  <a class="icon link" href="" aria-label="Ссылка на Facebook">
-                    Fac
-                  </a>
-                </li>
-                <li class="item">
-                  <a class="icon link" href="" aria-label="Ссылка на LinkedIn">
-                    Link
-                  </a>
-                </li>
-              </ul>
+              <div class="team-card-content">
+                <h3 class="team-card-name">Marta Stewart</h3>
+                <p class="team-card-profession">Frontend Developer</p>
+                <ul class="socials-list list">
+                  <li>
+                    <a
+                      class="icon link"
+                      href=""
+                      aria-label="Ссылка на Instagram"
+                    >
+                      Ins
+                    </a>
+                  </li>
+                  <li>
+                    <a class="icon link" href="" aria-label="Ссылка на Twitter">
+                      Twit
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="icon link"
+                      href=""
+                      aria-label="Ссылка на Facebook"
+                    >
+                      Fac
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="icon link"
+                      href=""
+                      aria-label="Ссылка на LinkedIn"
+                    >
+                      Link
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
-            <li class="item">
+            <li class="team-card">
               <img
-                class="pic"
                 src="./images/robert-jakis.jpg"
-                width="278"
+                width="270"
                 height="260"
                 alt="Фотография Robert Jakis"
               />
-              <h3 class="name">Robert Jakis</h3>
-              <p class="section-text">Marketing</p>
-              <ul class="socials-list list">
-                <li class="item">
-                  <a class="icon link" href="" aria-label="Ссылка на Instagram">
-                    Ins
-                  </a>
-                </li>
-                <li class="item">
-                  <a class="icon link" href="" aria-label="Ссылка на Twitter">
-                    Twit
-                  </a>
-                </li>
-                <li class="item">
-                  <a class="icon link" href="" aria-label="Ссылка на Facebook">
-                    Fac
-                  </a>
-                </li>
-                <li class="item">
-                  <a class="icon link" href="" aria-label="Ссылка на LinkedIn">
-                    Link
-                  </a>
-                </li>
-              </ul>
+              <div class="team-card-content">
+                <h3 class="team-card-name">Robert Jakis</h3>
+                <p class="team-card-profession">Marketing</p>
+                <ul class="socials-list list">
+                  <li>
+                    <a
+                      class="icon link"
+                      href=""
+                      aria-label="Ссылка на Instagram"
+                    >
+                      Ins
+                    </a>
+                  </li>
+                  <li>
+                    <a class="icon link" href="" aria-label="Ссылка на Twitter">
+                      Twit
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="icon link"
+                      href=""
+                      aria-label="Ссылка на Facebook"
+                    >
+                      Fac
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="icon link"
+                      href=""
+                      aria-label="Ссылка на LinkedIn"
+                    >
+                      Link
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
-            <li class="item">
+            <li class="team-card">
               <img
-                class="pic"
                 src="./images/martin-doe.jpg"
-                width="278"
+                width="270"
                 height="260"
                 alt="Фотография Martin Doe"
               />
-              <h3 class="name">Martin Doe</h3>
-              <p class="section-text">UI Designer</p>
-              <ul class="socials-list list">
-                <li class="item">
-                  <a class="icon link" href="" aria-label="Ссылка на Instagram">
-                    Ins
-                  </a>
-                </li>
-                <li class="item">
-                  <a class="icon link" href="" aria-label="Ссылка на Twitter">
-                    Twit
-                  </a>
-                </li>
-                <li class="item">
-                  <a class="icon link" href="" aria-label="Ссылка на Facebook">
-                    Fac
-                  </a>
-                </li>
-                <li class="item">
-                  <a class="icon link" href="" aria-label="Ссылка на LinkedIn">
-                    Link
-                  </a>
-                </li>
-              </ul>
+              <div class="team-card-content">
+                <h3 class="team-card-name">Martin Doe</h3>
+                <p class="team-card-profession">UI Designer</p>
+                <ul class="socials-list list">
+                  <li>
+                    <a
+                      class="icon link"
+                      href=""
+                      aria-label="Ссылка на Instagram"
+                    >
+                      Ins
+                    </a>
+                  </li>
+                  <li>
+                    <a class="icon link" href="" aria-label="Ссылка на Twitter">
+                      Twit
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="icon link"
+                      href=""
+                      aria-label="Ссылка на Facebook"
+                    >
+                      Fac
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="icon link"
+                      href=""
+                      aria-label="Ссылка на LinkedIn"
+                    >
+                      Link
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>
@@ -323,26 +370,25 @@
       </section>
     </main>
     <!-- Футер -->
-    <footer class="footer">
-      <div class="container site-footer">
-        <div class="adress-contacts">
+    <footer class="page-footer">
+      <div class="container">
+        <div class="footer-address">
           <a class="logo-footer link" href="./index.html">
             <span class="logo-accent">Web</span> Studio
           </a>
-          <address class="footer-address">
-            г. Киев, пр-т Леси Украинки, 26<br />
-            <a class="link mail-footer" href="mailto:info@example.com">
+          <address class="address-contacts">
+            <a class="link white" href="">г. Киев, пр-т Леси Украинки, 26</a>
+            <a class="link" href="mailto:info@example.com">
               info@example.com
             </a>
-            <br />
-            <a class="link tel-footer" href="tel:+380991111111">
+            <a class="link" href="tel:+380991111111">
               +38 099 111 11 11
             </a>
           </address>
         </div>
-        <div class="socials-links">
-          <b class="footer-socials">присоединяйтесь</b>
-          <ul class="list footer-list">
+        <div class="footer-socials">
+          <b class="socials-caption">присоединяйтесь</b>
+          <ul class="footer-socials-list list">
             <li class="item">
               <a class="icon link" href="" aria-label="Ссылка на Instagram">
                 Ins
@@ -365,14 +411,12 @@
             </li>
           </ul>
         </div>
-        <div class="subscribe">
-          <b class="footer-form">подписаться на рассылку</b>
-          <a class="button link" href="">Подписаться</a>
+        <div class="footer-subscribe">
+          <b class="subscribe-caption">подписаться на рассылку</b>
+          <a class="button subscribe-button link" href="">Подписаться</a>
         </div>
       </div>
-      <div class="container site-copyright">
-        <p class="copyright">2020 | Developed by GoIT Students</p>
-      </div>
+      <p class="copyright">2020 | Developed by GoIT Students</p>
     </footer>
   </body>
 </html>
